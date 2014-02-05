@@ -2,15 +2,23 @@
     width:90%;
     padding-left:0px;
     padding-right:0px;
+    height:300px;
+
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
 }
 body {
-    background-image:url("../img/header-blur.jpg");
-    background-color:#000;
-    background-size: cover;
+
+    background-color:#F0646E;
     color:#000;
 }
 .billboard {
-    margin-top:50px;
     color:#fff;
 }
 
@@ -24,11 +32,10 @@ body {
 }
 
 img {
-    margin-top:30px;
+    width:100%;
 }
 
 .portfolio {
-    margin-top:300px;
     background-color:#fff;
 }
 
@@ -88,5 +95,5 @@ hr {
 .hi .btn:hover {
     border: none;
     background-image:none;
-    background-color:rgba(66,139,202,0.8);
+    background-color:#41A0DC;
 }
