@@ -1,99 +1,183 @@
-.container {
-    width:90%;
-    padding-left:0px;
-    padding-right:0px;
-    height:300px;
-
-
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    margin: auto;
-}
 body {
-
-    background-color:#F0646E;
-    color:#000;
-}
-.billboard {
     color:#fff;
 }
 
-
-.billboard {
-    text-align:center;
-}
-.billboard h1 {
-    font-size:7em;
-    font-weight:100;
+.intro-text {
+    font-size:14pt;
 }
 
-img {
+@media (min-width:960px) {
+    .screen-height {
+        height: 100vh;
+    }
+}
+
+@media (max-width:959px) {
+    .screen-height {
+        height: 800px;
+    }
+}
+.introduction {
+    background-color:#F0646E;
+}
+
+.container {
+    width:100vw;
+    margin:0px;
+    padding:0px;
+}
+
+.introduction {
+    padding:12.5% 3em;
+}
+
+.col-md-6 .row {
+    margin:0px;
+    padding:1em;
+}
+
+.row {
+    margin:0px;
+}
+
+
+.main img {
     width:100%;
 }
 
+@media(min-width:960px) {
+    .col-md-6:nth-child(2n+1) {
+        border-right: 3px solid #373737;
+    }
+}
+
+.right-text {
+    padding-top:1em;
+}
+
 .portfolio {
-    background-color:#fff;
+    background-color:#5AC8C8;
 }
 
-.row{
-}
-
-.subtitle {
+.bottom {
     text-align:center;
+    width:100%;
+    font-size:36pt;
+    padding-bottom:1em;
 }
 
-.portfolio img {
-    display: block;
-    margin: 0 auto;
+.bottom a {
+    text-decoration:none;
+    color:#fff;
 }
 
-.portfolio h3 {
-    text-align:center;
+.bottom-intro {
+    position:absolute;
+    bottom:0;
 }
 
-.portfolio .row {
-    padding-top:100px;
-    padding-bottom:100px;
+@media screen and (orientation:landscape) {
+    .bottom-intro {
+        bottom:-200px;
+    }
 }
 
-.portfolio .row p {
-    padding-left:10px;
-    padding-right:10px;
-}
-.portfolio .row h3 {
-    margin-bottom:3em;
-    font-weight:200;
+
+.bottom-portfolio {
+    position:absolute;
+    bottom:0;
 }
 
-h2 {
-    font-weight:200;
+.bottom-about-us {
+    position:absolute;
+    bottom:0;
 }
 
-.hi a {
-    font-size:1.4em;
+.about-us {
 }
 
-hr {
-    margin-top:3em;
-    margin-bottom:3em;
+.portfolio {
+    position:relative;
+}
+.portfolio-image {
+    background-image:url('/img/skyrim.jpg');
+    background-size:cover;
 }
 
-.hi .btn {
-    padding:0.7em 1.4em;
+.portfolio .col-md-3 {
+    padding:.5em 1em;
+    margin:0px;
+    background-color:#373737;
+    color:#fff;
+    font-size:12pt;
+    line-height:1.2em;
 }
 
-.hi .btn {
-    border: none;
-    background-image:none;
-    background-color:rgba(255,255,255,0.2);
+.portfolio .col-md-3 p {
+    padding-bottom:1.5em;
 }
 
-.hi .btn:hover {
-    border: none;
-    background-image:none;
+.portfolio .col-md-3 h2 {
+    font-size:24pt;
+}
+
+.contact .col-md-6 {
+    padding: 12.5% 1em;
+}
+
+.btn-primary {
+    font-size:144pt;
+}
+
+.contact {
+    background-image:url('/img/contact-background.jpg');
+    background-size:cover;
+}
+
+
+.top-text {
+    position:relative;
+    top: 0;
+    right:0;
+    font-size:18pt;
+    width:400px;
+}
+
+.contact a {
+    font-size:24pt;
+    background-color:#3C5A8C;
+    color:#fff;
+    margin-top:8em;
+}
+
+.contact a:hover {
+    color:#fff;
     background-color:#41A0DC;
+}
+
+.about-us {
+    position:relative;
+}
+
+.sam {
+    background-image:url('/img/sam.jpg');
+    background-size:cover;
+    padding:0px;
+}
+
+.ben {
+    background-image:url('/img/ben.png');
+    background-size:cover;
+    padding:0px;
+}
+
+.profile-container {
+    background-color:rgba(0,0,0,0.8);
+    margin:0px;
+    padding:.5em 1em;
+    padding-bottom:3em;
+}
+
+.darker-because-ben {
+    background-color:rgba(0,0,0,0.85);
 }
